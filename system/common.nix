@@ -1,3 +1,9 @@
-({ config, pkgs, ... }: {  
-    users.mutableUsers = false;
-})
+{ config, pkgs, ... }: {
+  environment = {
+    systemPackages = with pkgs; [
+      git
+    ];
+  };
+  
+  #users.mutableUsers = false;  
+}

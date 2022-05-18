@@ -21,6 +21,7 @@
         main-laptop = lib.nixosSystem {
           inherit system;
           modules = [
+            ./system/common.nix
             ./system/uiu57o6a.nix
           ];
         };
