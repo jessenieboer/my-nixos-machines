@@ -1,0 +1,28 @@
+* repo organization
+note: one repo per flake
+
+system: flakes for hardware and high-level os configs
+technology:
+project
+team
+* ip-factory
+- put together combinations of the different scopes to get the machine you want (dev machine, build server, general computing, etc...)
+- generally one flake per "module" so they can be used as separate inputs
+- a machine is not the same as an ip-factory
+** ideological scope
+no real nix stuff needed
+** hardware/infrastructure/os/system
+- nixos configs contained in a flake (note that flake = a set of inputs and outputs)
+- configs tied to hardware, so config per hardware setup, perhaps with varying infrastructure? (laptop hyper v, desktop hyper v, old laptop, etc...)
+- either different flakes for different hardware, or one flake per "owner" of the hardware, i.e. a flake per kingdom (my machines, vermeer machines, etc...)
+** platform/technology/maybe purpose
+- haskell flake, python flake, etc... (dev, test, run?)
+- perhaps a haskell flake, then sub-flakes for haskell dev and test and run?
+** product/project
+- my project (dev, test, run?)
+- dotfiles
+** team/user
+- home manager for user
+- not sure about team
+- dotfiles
+
