@@ -1,7 +1,7 @@
 { config, pkgs, ... }: {
 
   imports = [
-    ./uiu57o6a-hardware.nix
+    ./hardware-configuration.nix
   ];
 
   config = {
