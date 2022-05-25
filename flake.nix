@@ -23,6 +23,7 @@
           modules = [
             ./system/common.nix
             ./system/uiu57o6a.nix
+            ./user/jessenieboer.nix
           ];
         };
       };

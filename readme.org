@@ -5,6 +5,17 @@ system: flakes for hardware and high-level os configs
 technology:
 project
 team
+* getting started
+as root in the root dir
+git clone https://github.com/jessenieboer/my-nixos-machines.git
+
+cp /etc/nixos/hardware-configuration my-nixos-machines/system/.
+
+git add . (or the flake might not build right)
+
+switch to one of the configs named in flake.nix i.e.
+nixos-rebuild switch --flake .#main-laptop
+
 * ip-factory
 - put together combinations of the different scopes to get the machine you want (dev machine, build server, general computing, etc...)
 - generally one flake per "module" so they can be used as separate inputs
