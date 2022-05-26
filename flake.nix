@@ -19,7 +19,7 @@
           modules = [
             ./system/common.nix
             ./system/uiu57o6a.nix
-            ./user/main-laptop-users.nix
+            ./user/common-users.nix
           ];
         };
       };
